@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLClienteController">
+   <children>
+      <Label layoutX="134.0" layoutY="116.0" text="Nome:">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="118.0" layoutY="78.0" prefHeight="27.0" prefWidth="74.0" text="Numero:">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="141.0" layoutY="161.0" text="Cpf:">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="134.0" layoutY="228.0" text="Sexo:">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font></Label>
+      <TextField fx:id="textNome" layoutX="234.0" layoutY="117.0" />
+      <TextField fx:id="textNumero" layoutX="234.0" layoutY="79.0" />
+      <TextField fx:id="textCpf" layoutX="234.0" layoutY="162.0" />
+      <RadioButton fx:id="rbM" layoutX="242.0" layoutY="232.0" mnemonicParsing="false" text="M">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="sexo" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbF" layoutX="324.0" layoutY="232.0" mnemonicParsing="false" text="F" toggleGroup="$sexo">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></RadioButton>
+      <Button fx:id="salvar" layoutX="312.0" layoutY="300.0" mnemonicParsing="false" onAction="#salvar" text="Salvar">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="177.0" layoutY="14.0" text="Cadastrar Cliente">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="216.0" layoutY="300.0" mnemonicParsing="false" onAction="#Limpar" text="Voltar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

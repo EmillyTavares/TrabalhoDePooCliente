@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLVisualizarController">
+   <children>
+      <TableView fx:id="tabela" layoutX="109.0" layoutY="80.0" prefHeight="200.0" prefWidth="383.0" style="-fx-background-color: ORANGE;">
+        <columns>
+          <TableColumn fx:id="ColN" minWidth="5.0" prefWidth="40.0" text="N°" />
+          <TableColumn fx:id="ColNome" minWidth="50.0" prefWidth="150.0" text="Nome" />
+            <TableColumn fx:id="ColSexo" prefWidth="40.0" text="Sexo" />
+            <TableColumn fx:id="ColCpf" prefWidth="150.0" text="Cpf" />
+        </columns>
+      </TableView>
+      <Button layoutX="173.0" layoutY="307.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
+      <Button layoutX="349.0" layoutY="307.0" mnemonicParsing="false" onAction="#Excluir" text="Excluir" />
+      <Label layoutX="181.0" layoutY="23.0" text="Vizualizar Aluno">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="259.0" layoutY="307.0" mnemonicParsing="false" onAction="#Alterar" text="Alterar" />
+   </children>
+</AnchorPane>

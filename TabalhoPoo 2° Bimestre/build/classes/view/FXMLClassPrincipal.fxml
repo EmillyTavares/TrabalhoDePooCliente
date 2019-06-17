@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLClassPrincipalController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: yellow;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Arquivo">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#Sair" text="Sair" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Cadastar">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#cadastrar" text="Cliente" />
+                  <MenuItem mnemonicParsing="false" text="Empresarios" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Visualizar">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#Visualizar" text="Cliente" />
+                  <MenuItem mnemonicParsing="false" text="Empresario" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="110.0" layoutY="155.0" text="Seja Bem vindo">
+         <font>
+            <Font name="System Bold Italic" size="47.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
